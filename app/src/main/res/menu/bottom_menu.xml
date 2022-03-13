@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    >
+
+    <item android:id="@+id/homeFragment"
+        android:title="Home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24" />
+
+    <item
+        android:id="@+id/grouptaskfragment"
+        android:title="Group Work"
+        android:enabled="true"
+        android:icon="@drawable/outline_group_work_24"/>
+
+    <item
+        android:id="@+id/placholder"
+        android:title=""/>
+    <item
+        android:id="@+id/profilefragment2"
+        android:title="Profile"
+        android:enabled="true"
+        android:icon="@drawable/outline_manage_accounts_20"/>
+    <item
+        android:id="@+id/settingfragment"
+        android:icon="@drawable/ic_settings"
+        android:enabled="true"
+        android:title="Setting"/>
+</menu>

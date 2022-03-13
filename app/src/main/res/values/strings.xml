@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TODO-FE</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_jolt_down_your_task">Sign in to jolt down your task!!!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="haven_t_made_an_account_yet_sign_up">Haven\'t made an Account yet? Sign up</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hey_lets_get_you_started">Hey...Lets get you started</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="hold_up_while_we_create_your_account" />
+    <string name="messageload1">Hold up while we create your account!!!</string>
+    <string name="yay_new_account_created">Yay.New Account created!!</string>
+    <string name="to_be_implemented">To be Implemented</string>
+    <string name="oops_looks_like_you_have_created_your_account_already">Oops! Looks like you have created your account already.</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="group_task">Group Task</string>
+    <string name="home">Home</string>
+    <string name="username_draw">USERNAME DRAW</string>
+    <string name="emailid">EMAILID</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="task_title">Task Title</string>
+    <string name="looks_like_everything_is_covered">Looks like everything is covered</string>
+    <string name="new_task">New Task</string>
+    <string name="title">Title</string>
+    <string name="content">content</string>
+    <string name="please_wait_while_we_add_your_task">Please wait while we add your task!!</string>
+    <string name="retry">Retry</string>
+    <string name="your_task">Your Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="mark_as_complete">Mark as Complete??</string>
+    <string name="mark_as_imcomplete">Mark as Incomplete??</string>
+
+
+</resources>

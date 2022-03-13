@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_controll"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.anirudh.todo_fe.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/grouptaskfragment"
+        android:name="com.anirudh.todo_fe.ui.fragment.grouptaskfragment"
+        android:label="fragment_grouptaskfragment"
+        tools:layout="@layout/fragment_grouptaskfragment" />
+    <fragment
+        android:id="@+id/settingfragment"
+        android:name="com.anirudh.todo_fe.ui.fragment.Settingfragment"
+        android:label="fragment_settingfragment"
+        tools:layout="@layout/fragment_settingfragment" />
+    <fragment
+        android:id="@+id/profilefragment2"
+        android:name="com.anirudh.todo_fe.ui.fragment.Profilefragment"
+        android:label="fragment_profilefragment"
+        tools:layout="@layout/fragment_profilefragment" />
+</navigation>

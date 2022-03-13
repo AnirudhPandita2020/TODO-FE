@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@layout/activity_after_anim"
+        motion:constraintSetStart="@layout/activity_splash_screen"
+        motion:duration="3000"
+        motion:autoTransition="animateToEnd"
+        >
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="65"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/logo"
+                motion:percentY="0"
+                motion:percentX="0"/>
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/logo"
+                motion:percentX="1"
+                motion:percentY="1"/>
+            <KeyAttribute
+                android:rotation="0"
+                motion:framePosition="0"
+                motion:motionTarget="@+id/logo"
+                />
+            <KeyAttribute
+                android:rotation="360"
+                motion:framePosition="85"
+                motion:motionTarget="@+id/logo"/>
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/pen"
+                motion:percentY="0"
+                motion:percentX="0"/>
+            <KeyPosition
+                motion:framePosition="85"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/pen"
+                motion:percentY="1"
+                motion:percentX="1"/>
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/pad"
+                motion:percentY="0"
+                motion:percentX="0"/>
+            <KeyPosition
+                motion:framePosition="85"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/pad"
+                motion:percentY="1"
+                motion:percentX="1"/>
+            <KeyAttribute
+                motion:motionTarget="@+id/linear_layout"
+                android:alpha="0"
+                motion:framePosition="75"
+                />
+            <KeyAttribute
+                motion:motionTarget="@+id/linear_layout"
+                android:alpha="1"
+                motion:framePosition="85"
+                />
+
+            <KeyAttribute
+                motion:motionTarget="@+id/forgot_password"
+                android:alpha="0"
+                motion:framePosition="75"/>
+
+            <KeyAttribute
+                motion:motionTarget="@+id/forgot_password"
+                android:alpha="1"
+                motion:framePosition="85"/>
+            <KeyPosition
+                motion:framePosition="75"
+                motion:percentY="0"
+                motion:percentX="0"
+                motion:motionTarget="@+id/register"/>
+
+            <KeyPosition
+                motion:framePosition="85"
+                motion:percentY="1"
+                motion:percentX="1"
+                motion:motionTarget="@+id/register"/>
+
+        </KeyFrameSet>
+
+    </Transition>
+</MotionScene>
