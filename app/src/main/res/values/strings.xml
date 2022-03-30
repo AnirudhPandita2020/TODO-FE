@@ -39,5 +39,13 @@
     <string name="mark_as_complete">Mark as Complete??</string>
     <string name="mark_as_imcomplete">Mark as Incomplete??</string>
 
+    <string name="profile">Profile</string>
+    <string name="your_tasks">Your Tasks</string>
+
+    <string name="friends">Friends</string>
+    <string name="pending_friend_request">Pending Friend Request</string>
+    <string name="type_the_username_to_search">Type the username to search</string>
+    <string name="add_friend">Add Friend</string>
+
 
 </resources>

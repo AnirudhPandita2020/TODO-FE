@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.sql.Time
 import java.util.concurrent.TimeUnit
 
-class RetrofitInstance(private val tokenType:String,private val access_token:String){
+class RetrofitInstance(){
     companion object{
         val interceptor = HttpLoggingInterceptor().apply {
             this.level = HttpLoggingInterceptor.Level.BODY

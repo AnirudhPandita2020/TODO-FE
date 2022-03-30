@@ -43,7 +43,7 @@ class HomeFragment : Fragment() {
     lateinit var mainviewmodel: ViewModel
     lateinit var taskadapter:TaskListAdapter
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentHomeBinding.inflate(layoutInflater,container,false)
         datastore = requireActivity().getSharedPreferences("Token",Context.MODE_PRIVATE)
         token = datastore.getString("access_token","").toString()

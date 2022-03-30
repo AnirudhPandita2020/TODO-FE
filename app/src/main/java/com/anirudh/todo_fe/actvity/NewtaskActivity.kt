@@ -21,6 +21,7 @@ import com.anirudh.todo_fe.api.TODOBE
 import com.anirudh.todo_fe.databinding.ActivityCreateLoadingBinding
 
 import com.anirudh.todo_fe.databinding.ActivityNewtaskBinding
+import com.anirudh.todo_fe.network.NetworkHelper
 import com.google.android.material.snackbar.Snackbar
 
 class NewtaskActivity : AppCompatActivity() {
@@ -38,7 +39,7 @@ class NewtaskActivity : AppCompatActivity() {
         mainviewmodel = ViewModelProvider(this, ViewModelFactory(repo)).get(ViewModel::class.java)
         setContentView(binding.root)
         binding.addtaskbtn.setOnClickListener {
-            if(checkConnection()){
+            if(NetworkHelper.isNetworkConnected(this)){
                 addnewTask(token)
             }
             else{
@@ -52,7 +53,6 @@ class NewtaskActivity : AppCompatActivity() {
         binding.addnewanim.visibility = View.VISIBLE
         val title = binding.newtask.text.toString()
         val content = binding.content.text.toString()
-        Toast.makeText(this, "$token", Toast.LENGTH_SHORT).show()
         val is_completed = false
         mainviewmodel.createtask("Bearer $token",title,content,is_completed)
 
@@ -74,13 +74,10 @@ class NewtaskActivity : AppCompatActivity() {
                         onBackPressed()
                     },2000)
                 }
+                is Response.Loading -> {}
             }
         })
 
     }
-    private fun checkConnection():Boolean{
-        val connectionManager: ConnectivityManager = this.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-        val activenetwork: NetworkInfo? = connectionManager.activeNetworkInfo
-        return activenetwork?.isConnected == true
-    }
+
 }

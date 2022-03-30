@@ -24,4 +24,7 @@ interface TODOBE {
 
     @PUT("/list/{id}")
     suspend fun edit_task(@Header("Authorization") token:String,@Body task:Newtask,@Path("id")id:Int):Response<EditTaskResponse>
+
+    @GET("/users")
+    suspend fun get_friend_list(@Query("search")user_key:String):Response<FriendList>
 }

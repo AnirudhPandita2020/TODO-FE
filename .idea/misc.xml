@@ -15,6 +15,7 @@
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_after_anim.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_create_loading.xml" value="0.34479166666666666" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_edit.xml" value="0.264" />
+        <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_friend_request.xml" value="0.21822916666666667" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_fullscreen.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_login.xml" value="0.23508771929824562" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_login_loading.xml" value="0.152" />
@@ -25,9 +26,10 @@
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_splash_login.xml" value="0.3078125" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/fragment_grouptaskfragment.xml" value="0.2" />
-        <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/fragment_home.xml" value="0.264" />
-        <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/fragment_profilefragment.xml" value="0.34479166666666666" />
+        <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/fragment_profilefragment.xml" value="0.2" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/fragment_settingfragment.xml" value="0.4" />
+        <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/friendlist.xml" value="0.2" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/nav_header.xml" value="0.34479166666666666" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/layout/task_box.xml" value="0.34479166666666666" />
         <entry key="..\:/Users/Anirudh Pandita/AndroidStudioProjects/TODOFE/app/src/main/res/menu/bottom_menu.xml" value="0.209375" />

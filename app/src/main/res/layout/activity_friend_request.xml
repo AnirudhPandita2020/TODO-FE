@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actvity.FriendRequest">
+
+    <AutoCompleteTextView
+        android:id="@+id/search_bar_fr"
+        android:padding="10dp"
+        android:hint="@string/type_the_username_to_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/suggestion"
+        android:layout_below="@id/search_bar_fr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

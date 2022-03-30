@@ -21,6 +21,7 @@ class Repo(private val service:TODOBE){
     private val TaskListLivedata = MutableLiveData<Response<TaskList>>()
     private val taskCreateLiveData = MutableLiveData<Response<TaskCreateResponse>>()
     private val taskEditLiveData = MutableLiveData<Response<EditTaskResponse>>()
+    private val friendListLiveData = MutableLiveData<Response<FriendList>>()
 
 
     val loginlivedata:LiveData<Response<Login>>
@@ -37,6 +38,9 @@ class Repo(private val service:TODOBE){
 
     val taskeditlivedata :LiveData<Response<EditTaskResponse>>
     get() = taskEditLiveData
+
+    val friendlistlivedata:LiveData<Response<FriendList>>
+    get() = friendListLiveData
 
     suspend fun UserLogin(username:String,password:String){
         try{
@@ -120,6 +124,23 @@ class Repo(private val service:TODOBE){
         }
         catch (e:HttpException){
             taskEditLiveData.postValue(Response.Error(e.message().toString()))
+        }
+    }
+    suspend fun friend_list(user_key:String){
+        try{
+            val result = service.get_friend_list(user_key)
+            if(result.isSuccessful){
+                friendListLiveData.postValue(Response.Success(result.body()))
+            }
+            else{
+                val error = result.raw()
+                friendListLiveData.postValue(Response.Error(error.message))
+            }
+        }catch (e:SocketTimeoutException){
+            friendListLiveData.postValue(Response.Error(e.message.toString()))
+        }
+        catch (e:HttpException){
+            friendListLiveData.postValue(Response.Error(e.message.toString()))
         }
     }
 }

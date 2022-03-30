@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomview.background = null
         binding.bottomview.menu.getItem(2).isEnabled = false
 
+
     }
 
     override fun onBackPressed() {

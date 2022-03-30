@@ -3,12 +3,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragment.Profilefragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="PROFILE" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/profileheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="40sp"
+            android:layout_margin="20dp"
+            android:textColor="@color/colorPrimary"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            android:layout_margin="20dp"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@id/profileheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/phutu"
+                    android:layout_width="340dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/outline_manage_accounts_20"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_below="@id/phutu"
+                    android:id="@+id/profileusername"
+                    android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:id="@+id/profileemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_below="@id/profileusername"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/friend"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/ic_baseline_emoji_people_24"
+            android:text="@string/friends" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/friendreq"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/friend"
+            android:textColor="@color/red"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_baseline_pending_24"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="@string/pending_friend_request"/>
+    </RelativeLayout>
+
 
 </FrameLayout>

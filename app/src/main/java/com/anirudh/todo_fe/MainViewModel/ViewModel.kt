@@ -28,6 +28,9 @@ class ViewModel(val repo: Repo):ViewModel(){
     fun edittask(token: String,task:Newtask,id:Int) = viewModelScope.launch {
         repo.edit_task(token,task,id)
     }
+    fun get_friend_list(user_key:String) = viewModelScope.launch {
+        repo.friend_list(user_key)
+    }
 
     val res_login:LiveData<Response<Login>>
     get() = repo.loginlivedata
@@ -43,4 +46,7 @@ class ViewModel(val repo: Repo):ViewModel(){
 
     val resedittask:LiveData<Response<EditTaskResponse>>
     get() = repo.taskeditlivedata
+
+    val friendlist:LiveData<Response<FriendList>>
+    get() = repo.friendlistlivedata
 }

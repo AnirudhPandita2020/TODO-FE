@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/username_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:id="@+id/username_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/email_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_head"
+                android:text="@string/email"
+                android:layout_margin="20dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/email_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_alignBottom="@id/email_head"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_head"
+                android:layout_centerHorizontal="true"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="@string/add_friend"
+                android:textColor="@color/green"
+                android:drawableLeft="@drawable/outline_add_task_24"
+                android:drawablePadding="5dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

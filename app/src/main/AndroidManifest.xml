@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TODOFE">
         <activity
+            android:name=".actvity.FriendRequest"
+            android:exported="false" />
+        <activity
             android:name=".actvity.EditActivity"
             android:exported="false" />
 
